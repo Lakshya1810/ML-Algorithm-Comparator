@@ -88,17 +88,6 @@ The application will automatically open in your default browser at `http://local
 
 ---
 
-## 🌐 Deployment (Streamlit Cloud)
-
-This app is ready for one-click deployment on [Streamlit Cloud](https://streamlit.io/cloud):
-
-1. **Push** this code to a GitHub repository.
-2. **Login** to Streamlit Cloud and click "New app".
-3. **Select** your repository and the `app.py` file.
-4. **Deploy!** The platform will automatically install dependencies from `requirements.txt`.
-
----
-
 ## 🧪 Modular API Documentation
 
 ### Preprocessing (`src.preprocessing`)
