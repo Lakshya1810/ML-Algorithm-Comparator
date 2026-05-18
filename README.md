@@ -51,7 +51,6 @@ Clone this repository and install the required packages:
 
 ```bash
 # Navigate to the project folder
-cd "F:\ML Project"
 
 # Install dependencies
 pip install -r requirements.txt
