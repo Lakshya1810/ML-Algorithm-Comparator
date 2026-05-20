@@ -143,8 +143,8 @@ def preprocess_data(
 
     # Fill missing values
     for col in df_work.columns:
-        if df_work[col].dtype == "object" or df_work[col].dtype.name == "category":
-            # Categorical: fill with mode, fallback to "Unknown"
+        if not pd.api.types.is_numeric_dtype(df_work[col]):
+            # Categorical/String: fill with mode, fallback to "Unknown"
             mode_vals = df_work[col].mode()
             fill_val = mode_vals.iloc[0] if len(mode_vals) > 0 else "Unknown"
             df_work[col] = df_work[col].fillna(fill_val)
